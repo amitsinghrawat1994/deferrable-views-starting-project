@@ -41,8 +41,10 @@
   </p>
 </section>
 
-@defer(on viewport) {
+<!-- @defer(on viewport) { -->
+<!--when clicking the placeholder-->
+@defer(on interaction) {
 <app-offer-preview />
 } @placeholder {
-<p>We might have an offer...</p>
+<p class="fallback">We might have an offer...</p>
 }
